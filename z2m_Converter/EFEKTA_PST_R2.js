@@ -176,7 +176,7 @@ const definition = {
         configure: async (device, coordinatorEndpoint, logger) => {
             const endpointOne = device.getEndpoint(1);
 			const endpointTwo = device.getEndpoint(2);
-            await reporting.bind(endpointOne, coordinatorEndpoint, ['genPowerCfg', 'msPressureMeasurement']);
+            await reporting.bind(endpointOne, coordinatorEndpoint, ['genTime', 'genPowerCfg', 'msPressureMeasurement']);
 			await reporting.bind(endpointTwo, coordinatorEndpoint, ['msTemperatureMeasurement']);
 			const overrides1 = {min: 0, max: 21600, change: 1};
 			const overrides2 = {min: 30, max: 1800, change: 10};
