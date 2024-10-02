@@ -96,7 +96,7 @@ const definition = {
                 valueMin: -8192,
                 valueMax: 8192,
                 cluster: 'msTemperatureMeasurement',
-                attribute: {ID: 0x0210, type: 0x29},
+                attribute: {ID: 0x0008, type: 0x29},
                 description: 'Adjust temperature sensor',
             }),
 			numeric({
