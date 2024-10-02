@@ -50,7 +50,7 @@ const definition = {
             extend: [
             pressure({
                 unit: 'kPa',
-                description: 'pressure in kPa',
+                description: 'Measured value of the pressure in kPa',
                 scale: 10,
                 reporting: oneReporting,
                 access: 'STATE',
@@ -60,7 +60,7 @@ const definition = {
                 unit: 'bar',
                 cluster: 'msPressureMeasurement',
                 attribute: 'measuredValue',
-                description: 'pressure in bar',
+                description: 'Measured value of the pressure in bar',
                 scale: 1000,
                 precision: 2,
                 access: 'STATE',
@@ -70,13 +70,13 @@ const definition = {
                 unit: 'psi',
                 cluster: 'msPressureMeasurement',
                 attribute: 'measuredValue',
-                description: 'pressure in bar',
+                description: 'Measured value of the pressure in psi',
                 scale: 68.94757,
                 precision: 2,
                 access: 'STATE',
             }),
             temperature({
-                description: 'Measured value of the first temperature sensor',
+                description: 'Measured value of the temperature sensor',
                 reporting: twoReporting,
                 access: 'STATE',
             }),
