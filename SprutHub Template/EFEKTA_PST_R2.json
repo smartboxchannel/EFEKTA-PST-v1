@@ -2,7 +2,7 @@
   "name": "Датчик давления EFEKTA PST",
   "manufacturer": "EfektaLab",
   "model": "EFEKTA_PST_V1",
-  "manufacturerId": "EfektaLab",
+  "manufacturerId": "(EfektaLab|EfektaLab_for_Zigbee-Shop.ru)",
   "modelId": "EFEKTA_PST_V1",
   "catalogId": -1,
   "status": "Test",
