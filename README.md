@@ -6,5 +6,5 @@
 
 Продажа DIY Устройств - https://t.me/diydevmart
 
-ОЛписание - http://efektalab.com/PST_v1
+Описание - http://efektalab.com/PST_v1
 
