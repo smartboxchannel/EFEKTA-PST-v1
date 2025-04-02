@@ -42,12 +42,6 @@
         },
 		{
           "endpoint": 1,
-          "cluster": "0000_Basic",
-          "attribute": "A19B_Custom",
-          "zclDataType": "CHARACTER_STRING"
-        },
-		{
-          "endpoint": 1,
           "cluster": "0403_PressureMeasurement",
           "attribute": "0210_Custom",
           "zclDataType": "SIGNED_16_BIT_INTEGER"
@@ -141,6 +135,28 @@
         "max": 1800,
         "change": 25
 	  }
+    },
+	  {
+      "link": {
+        "endpoint": 1,
+        "cluster": "0403_PressureMeasurement",
+        "output": true
+      },
+      "name": "Прямая передача данных давления газа/жидкости на другое устройство",
+      "description": "Привязка к другому устройству по данным давления газа/жидкости, для прямой передачи данных на другое устройство.",
+      "type": "String",
+      "bind": true
+    },
+	{
+      "link": {
+        "endpoint": 2,
+        "cluster": "0402_TemperatureMeasurement",
+        "output": true
+      },
+      "name": "Прямая передача данных температуры на другое устройство",
+      "description": "Привязка к другому устройству по данным температуры, для прямой передачи данных на другое устройство.",
+      "type": "String",
+      "bind": true
     }
   ],
   "services": [
@@ -189,19 +205,6 @@
     }
   ],
   "options": [
-    {
-        "link": {
-          "endpoint": 1,
-          "cluster": "0000_Basic",
-          "attribute": "A19B_Custom"
-        },
-        "name": "Название используемого сенсора",
-        "type": "String",
-        "init": false,
-        "write": false,
-        "input": "status",
-		"value": 0
-    },
 	{
         "link": {
           "endpoint": 1,
@@ -214,7 +217,7 @@
         "init": false,
         "write": false,
         "input": "status",
-		"value": 0
+        "value": 0
     },
 	{
         "link": {
@@ -224,7 +227,7 @@
         },
         "name": "Интервал чтения сенсоров, в секундах",
         "type": "Integer",
-		"unit": "сек.",
+        "unit": "сек.",
         "init": false,
         "value": 30,
         "minValue": 10,
@@ -351,28 +354,6 @@
         "write": false,
         "input": "status",
 		"value": 0
-    },
-	{
-      "link": {
-        "endpoint": 1,
-        "cluster": "0403_PressureMeasurement",
-        "output": true
-      },
-      "name": "Прямая передача данных давления газа/жидкости на другое устройство",
-      "description": "Привязка к другому устройству по данным давления газа/жидкости, для прямой передачи данных на другое устройство.",
-      "type": "String",
-      "bind": true
-    },
-	{
-      "link": {
-        "endpoint": 2,
-        "cluster": "0402_TemperatureMeasurement",
-        "output": true
-      },
-      "name": "Прямая передача данных температуры на другое устройство",
-      "description": "Привязка к другому устройству по данным температуры, для прямой передачи данных на другое устройство.",
-      "type": "String",
-      "bind": true
     }
   ]
 }
