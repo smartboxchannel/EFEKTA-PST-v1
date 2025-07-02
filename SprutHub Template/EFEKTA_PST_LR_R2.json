@@ -184,28 +184,15 @@
       "characteristics": [
         {
           "type": "C_CurrentAtmosphericPressure",
+          "unit": "Bar",
+          "minStep": 0.01,
+          "maxValue": 10,
           "link": [
             {
-              "endpoint": 1,
-              "cluster": "0403_PressureMeasurement",
-              "attribute": "0000_MeasuredValue"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Датчик давления воды",
-      "type": "C_AtmosphericPressureSensor",
-      "characteristics": [
-        {
-          "type": "C_CurrentAtmosphericPressure",
-          "link": [
-            {
+              "type": "Double",
               "endpoint": 1,
               "cluster": "0403_PressureMeasurement",
               "attribute": "0000_MeasuredValue",
-              "write": false,
               "inFunc": "value*0.00133322"
             }
           ]
